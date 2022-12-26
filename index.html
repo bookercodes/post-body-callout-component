@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="post-body">
+        <aside class="callout">
+            <strong>Placeholders and accessibility</strong>
+            <p>You may have heard that placeholders are bad for accessibility and shouldn't be used.</p>
+            <p>My personal opinion is that they're alright to use <em>when they're used properly</em>. The trouble is that many developers use them improperly.
+            </p>
+            <button>
+                <span>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="20" 
+                        height="20" 
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </span>
+                Show more
+            </button>
+            <div class="more">
+                <p>Placeholders are criticized because the text is typically very light; if someone has poor vision, they might not be able to read the text at all.</p>
+                <p>Here's the thing, though: placeholders aren't meant to contain <em>critical</em> information. They're meant to provide an example, to give folks an idea about how to format their data. They should never be used to label an input (use a <code><label></code> element instead).</p>
+                <p>What if the user can't read the placeholder, and enters data in an incorrect format? First, we should build forms that are flexible and support a wide range of user inputs. With the power of JavaScript, we can transform their input into a standardized format!</p>
+                <p>But, if they really do enter invalid data, a helpful error message should be shown. It should explain what the user did wrong, and how to fix it. And it should be bright and high-contrast.</p>
+                <p>Here's a quick test you can use to check if you're using placeholders correctly: if you were to remove all of the placeholders from the form, would it still be usable, and easy to fill out? If the answer is “no”, you have some work to do.</p>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
