@@ -1,5 +1,6 @@
 body {
     font-family: 'Quicksand';
+    margin-top: 50px;
 }
 
 .post-body {
@@ -16,6 +17,7 @@ body {
 
 .callout {
     font-weight: 500;
+    position: relative;
 }
 
 .callout button {
@@ -31,10 +33,25 @@ body {
     cursor: pointer;
 }
 
+.callout button:hover svg {
+    transform: translate(0px, 7px);
+}
+
 .callout button svg {
     transform: translate(0px, 5px);
 }
 
 .callout .more {
     display: none;
+}
+
+.callout-icon {
+    transform: translate(-50%, -50%);
+    color: #fd9e00;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25%;
+    padding: 8px;
 }
